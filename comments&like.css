@@ -6,9 +6,9 @@
     font-family: 'Poppins',sans-serif;
 }
 .container{
-    width:100%;
-    min-height: 50vh;
-    background-color: rgb(158, 55, 193);
+    width:auto;
+    min-height: 20px;
+    background-color: rgb(122, 15, 165);
     
 
 }
