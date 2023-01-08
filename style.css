@@ -358,7 +358,8 @@ textarea {
         }
         .table{
 
-            margin:10px;
+            margin:-1px;
+            width: 295px;
         }
         .row{
 
@@ -431,8 +432,11 @@ textarea {
         }
         .row{
             text-align: center;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            
         }
+        
     }
 
     @media only screen and (max-width:662px) {
@@ -443,5 +447,17 @@ textarea {
         }
 
        
+
+    }
+    @media only screen and (max-width:432px) {
+        
+        .col-md-4{
+            flex-direction: column;
+            position: relative;
+
+        }
+        .table{
+            width:0px;
+        }
 
     }
