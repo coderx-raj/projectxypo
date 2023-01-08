@@ -6,6 +6,7 @@
 body {
 
     font-family: 'popins', sans-serif;
+    
 }
 
 .navbar {
@@ -44,13 +45,12 @@ a {
 }
 
 .container {
-   max-width: 1300px;
+    max-width: 1300px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
     position: relative;
     left: -21px;
-
 
 }
 
@@ -429,10 +429,10 @@ textarea {
         .col-2,.col-3,.col-4 {
             flex-basis: 100%;
         }
-        .row{
+        /* .row{
             text-align: center;
             display: block;
-        }
+        } */
     }
 
     @media only screen and (max-width:662px) {
