@@ -10,11 +10,9 @@ body{
     background: rgb(255, 250, 250);
     border-radius:10px;
     transition: all .1s ease 0s;
-	width: 50%;
-	height: 450px;
-justify-content:center;
+	width: 400px ;
+	height: 495px;
 	
-    
 }
 .title{
     background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
