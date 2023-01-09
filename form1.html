@@ -90,7 +90,7 @@ button:hover {
 <p>By creating an account you agree to our <a href="#"
 style="color:dodgerblue">Terms & Privacy</a><p>
 <div>
-<button type="button" class="cancel">Cancel</button>
+<button type="button" class="cancel" onclick="window.location.href = 'index.html';">Cancel</button>
 <button type="submit" class="signup">Confirm Order</button>
 </div>
 </div>
@@ -106,7 +106,7 @@ style="color:dodgerblue">Terms & Privacy</a><p>
               response => response.json()
           ).then((html) => {
             // you can put any JS code here
-            window.open('thanku.html', '_blank');
+            window.open('thanku.html', '_main');
 
           });
         });
