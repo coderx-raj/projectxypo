@@ -70,15 +70,15 @@ button:hover {
 }
 </style>
 <body>
-<form action="thanku.html" >
+<form action="https://sheetdb.io/api/v1/eoaddpgwp9fot" method="post" id="sheetdb-form" >
 <div class="box">
 <h1 >Order Now</h1>
 <hr>
 <label for="email">
-<input type="text" placeholder="Paste Youtube Link" name="email" required>
+<input type="text" placeholder="Paste Youtube Link" name="data[email]" required>
 <label for="password">
-<input type="text" placeholder="Enter Email Id" name="password" required>
-<select class="slt">
+<input type="text" placeholder="Enter Email Id" name="data[password]" required>
+<select class="slt" name="data[new]">
      <option value="$0">$0</option>
     
   </select>
@@ -95,5 +95,21 @@ style="color:dodgerblue">Terms & Privacy</a><p>
 </div>
 </div>
 </form>
+   <script>
+    var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "post",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('thanku.html', '_blank');
+
+          });
+        });
+        </script>
 </body>
 </html>
