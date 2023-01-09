@@ -109,16 +109,16 @@ button:hover {
 <body>
     <div class="box">
     
-<form action="thanku.html" >
+<form action="https://sheetdb.io/api/v1/mmdvja5ivn9ic" method="post" id="sheet-form">
     <h1 class="order" >Complete your Payment</h1>
 
 
 
 
-<input type="text" placeholder="Paste Youtube Link" name="email" required>
+<input type="text" placeholder="Paste Youtube Link" name="data[youtube-link]" required>
 
-<input type="text" placeholder="Enter Email Id" name="password" required>
-<select class="slt">
+<input type="text" placeholder="Enter Email Id" name="data[email-is]" required>
+<select class="slt" name="data[price-option]">
     <option value="$6.99">$2.99</option>
    <option value="$5.99">$5.99</option>
     <option value="$6.99">$6.99</option>
@@ -159,5 +159,21 @@ style="color:dodgerblue">Terms & Privacy</a><p>
 </div>
 </div>
 </form>
+    <script>
+            var form = document.getElementById('sheet-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheet-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('thanku.html', '_blank');
+
+          });
+        });
+        </script>
 </body>
 </html>
