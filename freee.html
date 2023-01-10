@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>free link</title>
+        <link rel="stylesheet" type="text/css" href="free.css">
+        <link rel="script" type="text/css" href="script.js">
+        <script src="script.js"defer></script>
+        
+    </head>
+    <body>
+        
+        <button class="download-btn" data-timer="5">
+            
+            <span class="text"> Click To Get Free    </span>
+            <span class="like-btn"><img src="like.png" alt="likeimg"height="30px"></span>
+
+        </button>
+        <div class="sub">
+        <button class="download-btnsub" data-timer="5">
+            
+            <span class="text"> Click To Get Free    </span>
+            <span class="like-btn"><img src="comment.png" alt="likeimg"height="30px"></span>
+
+        </button>
+    </div>
+        
+    <section id="comments">
+        <button class="download-btnsub" data-timer="5">
+            
+            <span class="text"> Click To Get Free Subscriber  </span>
+            <span class="like-btn"><img src="group.png" alt="likeimg"height="30px"></span>
+
+        </button>
+
+        </section>
+        
+
+    </body>
+    <script>
+        const downloadBtn = document.querySelector(".download-btn");
+// past form link
+const filelink ="file:///D:/final%20project/xypo.html";
+
+const initTimer=() => {
+    let timer = downloadBtn.CDATA_SECTION_NODE.timer;
+    downloadBtn.classList.add("timer");
+    downloadBtn.innerHTML = 'Wait your sumbition form generated in <b>${timer}</b> seconds';
+    const initCounter = setInterval(() =>{
+        if(timer > 0){
+            timer--;
+             return downloadBtn.innerHTML = 'Wait your sumbition form generated in <b>${timer}</b> seconds';
+        }
+    clearInterval(initCounter);
+    location.href = filelink;
+    downloadBtn.textContent ="Your file is downloading..."
+ }
+    
+};
+downloadBtn.addEventListener("Click",initTimer);
+    </script>
+</html>
