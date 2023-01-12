@@ -288,8 +288,10 @@ a {
     .header{
        
         background-image: url(phone.gif);
-        width: fit-content;
+        
+       
         background-size: cover;
+        max-height: 25px;
     }
 }
 
