@@ -271,6 +271,13 @@ a {
     width: 100%; */
     
 }
+@media (max-aspect-ratio: 16/9){
+    .header{
+       
+        background-image: url(phone.gif);
+        width: fit-content;
+        background-size: cover;
+    }
 
 .header .row {
     margin-top: 70px;
