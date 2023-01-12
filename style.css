@@ -259,7 +259,7 @@ a {
     min-height: 100vh;
     width: 100%;
     background-color: auto;
-    background-image: url(fgif.gif);
+    background-image: url(yihback.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -287,7 +287,7 @@ a {
 @media (max-aspect-ratio: 16/9){
     .header{
        
-        background-image: url(phone.gif);
+        background-image: url(yipb.gif);
         
        
         background-size: cover;
