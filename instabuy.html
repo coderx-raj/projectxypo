@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html>
+    <head>
+    <title>
+        buy page
+    </title>
+    <link rel="stylesheet" type="text/css" href="comments&like.css">
+    <link rel="stylesheet" href="finalbuyc.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+            <div class="navbar">
+        <div class="logo">
+            <img src="logo.png"width="125px"height="60px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="freee.html">Get Free Followers</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="container">
+            <h2>PRICING PLAN FOR EVERY ONE <br>BUY NOW INSTANT DELIVER</h2>
+            
+           <div class="price-row">
+            <div class="price-col">
+                <p>100 FOLLOWERS</p>
+                <h3>$2.99</h3>
+                <ul>
+                    <li>FREE 30 L&C</li>
+                    <li>Instant Deliver</li>
+                    <li>ACCOUNT SHOULD NOT PRIVATE</li>
+                    <li>Just Fill user I'D</li>
+                    <li>See fast Growth</li>
+                    <li>24/7 support</li>
+
+                </ul>
+                <button type="button"onclick="location.href='form.html'">BUY NOW</button>
+            </div>
+            <div class="price-col">
+                <div class="card">
+                    <span></span>
+                <p>300 Both C&L</p>
+                <h3>$6.99</h3>
+                <ul>
+                    <li>Free 30 FOLLOWERS </li>
+                    <li>option give suggestion comments</li>
+                    <li>Instant Deliver</li>
+                    <li>Account should public</li>
+                    <li>Just Give USER I'D</li>
+                    <li>24/7 support</li>
+
+                </ul>
+                <button type="button"onclick="location.href='form.html'">BUY NOW</button>
+            </div>
+            </div>
+            <div class="price-col">
+                <p>400 FOLLOWERS</p>
+                <h3>$13.455</h3>
+                <ul>
+                    <li>Free 100 FOLLOWERS</li>
+                    <li>Instant Deliver</li>
+                    <li>No, Password required</li>
+                    <li>Just Give User'ID link</li>
+                    <li>ACCOUNT SHOUND NOT PRIVATE</li>
+                    <li>24/7 support</li>
+                </ul>
+                <button type="button"onclick="location.href='form.html'">BUY NOW</button>
+            </div>
+            
+           </div> 
+        
+        </div>
+        </div>
+
+</div>
+       
+
+    </body>
+
+
+
+</html>
+        <!-- scropt nav -->
+        <script>
+             const nav = document.querySelector(".nav"),
+  searchIcon = document.querySelector("#searchIcon"),
+  navOpenBtn = document.querySelector(".navOpenBtn"),
+  navCloseBtn = document.querySelector(".navCloseBtn");
+
+searchIcon.addEventListener("click", () => {
+  nav.classList.toggle("openSearch");
+  nav.classList.remove("openNav");
+  if (nav.classList.contains("openSearch")) {
+    return searchIcon.classList.replace("uil-search", "uil-times");
+  }
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+
+navOpenBtn.addEventListener("click", () => {
+  nav.classList.add("openNav");
+  nav.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("openNav");
+});
+        </script>
+    </body>
+</html>
