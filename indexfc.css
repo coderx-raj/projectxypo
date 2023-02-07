@@ -35,7 +35,25 @@ body.dark{
     --text-color: #CCC;
     --search-bar: #242526;
 }
-.hero{
+/* modify btn css home */
+.btn_box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  }
+.btn_box button{
+  flex-basis: 48%;
+  padding: 18px 0;
+  margin-top: 80%;
+  border-radius: 30px;
+  background: #ff523b;
+  color: #fff;
+  }
+.btn_box button:hover {
+    background: #3c313f;
+    text-decoration-color: cornflowerblue;
+}
+/* .hero{
     min-height: 100vh;
     width: 100%;
     background-color: auto;
@@ -49,9 +67,9 @@ body.dark{
     
    
     
-}
+} */
 
-.hero button{
+/* .hero button{
     
     
     background: #ff523b;
@@ -66,12 +84,12 @@ body.dark{
     
 
 
-}
-.hero button:hover {
+} */
+/* .hero button:hover {
     background: #3c313f;
     text-decoration-color: cornflowerblue;
 
-}
+} */
 
 /* @media (min-aspect-ratio: 16/9){
     .hero button{
@@ -81,7 +99,7 @@ body.dark{
         display: flex;
     }
 } */
-@media (max-aspect-ratio: 16/9){
+/* @media (max-aspect-ratio: 16/9){
     .hero button{
        margin-top:12px ;
        margin-left: 10%;
@@ -92,7 +110,7 @@ body.dark{
         display: flex;
         
     }
-}
+} */
 /* @media (min-aspect-ratio: 16/9){
     .hero{
         margin-top: -135px;
