@@ -1,0 +1,339 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: rgb(221, 208, 208);
+    
+    
+}
+
+
+
+/* a {
+    text-decoration: none;
+    color: rgb(192, 43, 43);
+    font-size: 20px;
+
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.p {
+    color: #480505;
+}
+
+.container {
+    
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    left: -21px;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    
+    padding: 50px 0;
+    width: 100%;
+
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+
+}
+
+.btn-list {
+    display: flex;
+
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 10px 20px;
+   margin-top: 550px;
+    border-radius: 30px;
+   margin-right: 5px;
+}
+.btn-list a:hover {
+    background: #3c313f;
+    text-decoration-color: cornflowerblue;
+
+} */
+
+
+
+
+.header {
+    
+    min-height: 100vh;
+    width: 100%;
+    background-color: auto;
+    background-image: url(yihback.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -40px;
+    
+    
+}
+
+
+@media (max-aspect-ratio: 16/9){
+    .header{
+       
+        background-image: url(yipb.gif);
+        
+       
+        background-size: cover;
+        max-height: 25px;
+    }
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.box {
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+   
+   
+}
+
+.you {
+    margin: auto;
+    padding: auto;
+    font-size: 50px;
+    font-style: italic;
+    color: #b204f7;
+}
+
+
+
+
+
+
+#contact {
+    padding: 100px 0px;
+    background: #fff;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contact-left-col,
+.contact-right-col {
+    flex-basis: 50%;
+}
+
+.contact-left-col img {
+    width: 100%;
+}
+
+.COPY {
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+}
+
+.contact-right-col {
+    text-align: center;
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.common-btn {
+    padding: 10px 30px;
+    border: none;
+    margin: 10px;
+    outline: none;
+    background: rgb(55, 0, 255);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.common-btn:hover {
+    background: rgb(97, 0, 209);
+
+}
+
+.menu-icon {
+    width: 28px;
+    margin: 0px -49px;
+    display: none;
+}
+
+@media only screen and (max-width:1272px) {
+
+    .btn {
+        padding: 19px 5px;
+        font-size: 18px;
+        transition: all 0.1s ease-in;
+    }
+
+}
+
+@media only screen and (max-width:1116px) {
+
+    .btn {
+        padding: 18px 4px;
+        font-size: 13px;
+        transition: all 0.1s ease-in;
+    }
+}
+
+@media only screen and (max-width:874px) {
+
+    .btn {
+        padding: 17px 3px;
+        font-size: 12px;
+        transition: all 0.1s ease-in;
+    }
+
+    .table {
+
+        margin: 10px;
+        width: 295px;
+    }
+
+    .row {
+
+        margin: 10px;
+
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (max-width:789px) {
+    .btn-list {
+        display: flex;
+        flex-direction: column;
+        margin: 26px 41px;
+    }
+
+    .contact-left-col,
+    .contact-right-col {
+        flex-basis: 100%;
+    }
+
+    .contact-left-col img {
+        width: 100%;
+    }
+
+    .footer-left-col,
+    .footer-right-col {
+        flex-basis: 100%;
+    }
+
+    nav ul {
+        position: absolute;
+        text-align: center;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        /* overflow: hidden; */
+        transition: all 0.1s ease-in;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        height: 50px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+
+
+    .h-nav {
+        opacity: 0;
+
+    }
+
+
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+
+    .row {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+
+@media only screen and (max-width:415px) {
+    .h-table{
+        width: 350px;
+        margin:0;
+        padding: 0;
+    }
+
+}
