@@ -50,16 +50,20 @@ body.dark{
   justify-content: space-between;
   }
 .btn_box1 button{
-  flex-basis: 48%;
-  padding: 18px 0;
+  flex-basis: 30%;
+  padding: 18px ;
   margin-top: 80%;
+  margin-left: 2%;
   border-radius: 30px;
-  background: #ff523b;
+  box-shadow: #0077B5;
+  border-style: groove;
+  background: transparent ;
   color: #fff;
   }
 .btn_box1 button:hover {
-    background: #3c313f;
+    background: #850e4e;
     text-decoration-color: cornflowerblue;
+    
 }
 @media (max-aspect-ratio: 16/9){
   .btn_box1{
@@ -69,7 +73,7 @@ body.dark{
   padding-left: 5%;
     display: flex;
     flex-direction: column;
-    margin-top:140%;
+    margin-top:130%;
     justify-content: space-between;
     
     
@@ -79,7 +83,7 @@ body.dark{
       padding: 0;
       width: 300px;
       min-height: 78px;
-      margin-top: 800%;
+      margin-top: 700%;
       border-radius: 100px;
       background: #ff523b;
       color: #fff;
