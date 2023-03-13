@@ -173,8 +173,26 @@ button:hover {
       </div>
       
       <div id="payment-container">
-        <a id="payment-button" href="upi://pay?pa=xypo@sliceaxis&am=1146.55&pn=&mc=0000&mode=02&purpose=00">Pay Now</a>
-      </div>
+        <!-- <a id="payment-button" href="upi://pay?pa=xypo@sliceaxis&am=1146.55&pn=&mc=0000&mode=02&purpose=00">Pay Now</a> -->
+        <div>
+            <button id="payButton" onclick="showVerifyButton()">Verify</button>
+            <div id="verifyDiv" style="display: none;">
+              <input type="text" id="upiNumberOrEmail" placeholder="Enter UPI number or email">
+              <button onclick="processOrder()">Pay Now</button>
+              <div id="messageDiv"></div>
+            </div>
+          </div>
+      
+      <!-- <button class="pay-button" onclick="showInput()">Pay Now</button>
+		<div class="input-container" id="inputContainer">
+			<label for="upiInput">Verify UPI Account:</label>
+			<input type="text" id="upiInput" name="upiInput" placeholder="Enter UPI ID or Mobile Number">
+			<button onclick="verifyUPI()">Verify</button>
+		</div> -->
+    </div>
+    <!-- start -->
+    
+      
       
     <!-- end -->
             <div class="righttaxt"> 
@@ -216,8 +234,41 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("payment-container").style.display = "block";
   }
 });
+// payment window add
+function showVerifyButton() {
+  var payButton = document.getElementById("payButton");
+  var verifyDiv = document.getElementById("verifyDiv");
+  payButton.style.display = "none";
+  verifyDiv.style.display = "block";
+  var messageDiv = document.getElementById("messageDiv");
+  messageDiv.innerHTML = "Please enter your UPI number or email to process your order.";
+}
+
+function processOrder() {
+  var upiNumberOrEmail = document.getElementById("upiNumberOrEmail").value;
+  var messageDiv = document.getElementById("messageDiv");
+  if (upiNumberOrEmail) {
+    messageDiv.innerHTML = "";
+    window.location.href = "upi://pay?pa=xypo@sliceaxis&am=1146.55&pn=&mc=0000&mode=02&purpose=00";
+  } else {
+    messageDiv.innerHTML = "Please enter a valid UPI number or email.";
+  }
+}
+
 
         // end
+        // verify script
+        // function showInput() {
+		// 	var inputContainer = document.getElementById("inputContainer");
+		// 	inputContainer.style.display = "block";
+		// }
+		
+		// function verifyUPI() {
+		// 	var upiInput = document.getElementById("upiInput").value;
+		// 	// Write code to verify UPI account here
+		// 	alert("UPI account verified successfully!");
+		// }
+        // // end
 
             var form = document.getElementById('sheetdb-form');
         form.addEventListener("submit", e => {
