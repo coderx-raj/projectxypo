@@ -638,7 +638,28 @@ window.addEventListener("load", executeCodes);
 			      <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="sitemap.xml">
 <xsl:template match="/">
-  
+
+		       
+		       <!--    sscript code for reffer-->
+		      <script>
+    
+var referralLink = "https://coderx-raj.github.io/xypo.in/#"; // Replace with your actual referral link
+var shareButton = document.querySelector(".share-button"); // Replace ".share-button" with the actual class or ID of your share button element
+
+// When the "Reffer&Earn" link is clicked
+document.querySelector("li a[href='#']").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent the link from navigating to a new page
+
+  // Generate the referral link with the current page URL as the source
+  var currentPageUrl = encodeURIComponent(window.location.href);
+  var referralLinkWithSource = referralLink + "?source=" + currentPageUrl;
+
+  // Open a share window with the referral link
+  var shareUrl = "whatsapp://send?text=" + encodeURIComponent(referralLinkWithSource);
+  window.open(shareUrl, "_blank");
+});
+
+</script>
   
 	</body>
 	</html>
