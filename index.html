@@ -527,9 +527,29 @@
             <li class="link_name">Account</li>
             <li><a href="#">creat an Account</a></li>
             <li><a href="upload.html">Careers</a></li>
-            <li><a href="#">Reffer&Earn</a></li>
+            <li><a href="#" onclick="shareReferralLink()">Refer &amp; Earn</a></li>
             <li><a href="faq.html">FAQS</a></li>
           </ul>
+          <!-- reffer script -->
+          <script>
+            function shareReferralLink() {
+              
+              const referralLink = "https://coderx-raj.github.io/xypo.in/";
+              
+              if (navigator && navigator.share) {
+               
+                navigator.share({
+                  title: "Check out this website",
+                  url: referralLink
+                })
+                .catch(console.error);
+              } else {
+                
+                alert("Copy this referral link: " + referralLink);
+              }
+            }
+            </script>
+            
           <ul class="boxe">
             <li class="link_name">Dashboard</li>
             <li><a href="#">Login</a></li>
