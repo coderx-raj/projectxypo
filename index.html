@@ -526,7 +526,7 @@
           <ul class="boxe">
             <li class="link_name">Account</li>
             <li><a href="#">creat an Account</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="upload.html">Careers</a></li>
             <li><a href="#">Reffer&Earn</a></li>
             <li><a href="faq.html">FAQS</a></li>
           </ul>
@@ -534,7 +534,7 @@
             <li class="link_name">Dashboard</li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Account</a></li>
-            <li><a href="#">FeedBack Please</a></li>
+            <li><a href="feedback.html">FeedBack Please</a></li>
             <!-- <li><a href="#">Photoshop</a></li> -->
           </ul>
           <ul class="box input-box">
@@ -640,26 +640,7 @@ window.addEventListener("load", executeCodes);
 <xsl:template match="/">
 
 		       
-		       <!--    sscript code for reffer-->
-		      <script>
-    
-var referralLink = "https://coderx-raj.github.io/xypo.in/#"; // Replace with your actual referral link
-var shareButton = document.querySelector(".share-button"); // Replace ".share-button" with the actual class or ID of your share button element
-
-// When the "Reffer&Earn" link is clicked
-document.querySelector("li a[href='#']").addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent the link from navigating to a new page
-
-  // Generate the referral link with the current page URL as the source
-  var currentPageUrl = encodeURIComponent(window.location.href);
-  var referralLinkWithSource = referralLink + "?source=" + currentPageUrl;
-
-  // Open a share window with the referral link
-  var shareUrl = "whatsapp://send?text=" + encodeURIComponent(referralLinkWithSource);
-  window.open(shareUrl, "_blank");
-});
-
-</script>
+		     
   
 	</body>
 	</html>
